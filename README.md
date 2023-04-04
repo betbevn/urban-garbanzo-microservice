@@ -18,3 +18,15 @@ portainer: admin/F@mVGAD7vdP6TKy
 
 Npgsql
 Dapper
+
+**Ordering**
+
+MediatR.Extentions.Microsoft.DependencyInjection
+FluentValidation
+FluentValidation.DependencyInjectionExtensions
+AutoMapper
+AutoMapper.Extentions.Microsoft.Dependency
+Microsoft.Extentions.Logging.Abstractions
+Microsoft.EntityFrameworkCore.SqlServer
+SendGrid
+Microsoft.EntityFrameworkCore.Tools
