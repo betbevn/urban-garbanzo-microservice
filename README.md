@@ -25,8 +25,12 @@ MediatR.Extentions.Microsoft.DependencyInjection
 FluentValidation
 FluentValidation.DependencyInjectionExtensions
 AutoMapper
-AutoMapper.Extentions.Microsoft.Dependency
+AutoMapper.Extensions.Microsoft.DependencyInjection
 Microsoft.Extentions.Logging.Abstractions
 Microsoft.EntityFrameworkCore.SqlServer
 SendGrid
 Microsoft.EntityFrameworkCore.Tools
+
+```bash
+dotnet ef migrations add InitialCreate -o Migrations -s ../Ordering.API/Ordering.API.csproj
+```
