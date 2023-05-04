@@ -2,7 +2,8 @@
 
 **Catalog**
 
-MongoDB.Driver
+Nuget: MongoDB.Driver
+Docker: Add --> Container Orchestrator Support --> Docker Compose --> Linux --> Ok
 
 **Basket**
 
