@@ -15,10 +15,36 @@ Newtonsoft.Json --> Dùng để chuyển string thành object (Bởi redis lưu 
 
 portainer: admin/F@mVGAD7vdP6TKy
 
-**Discount**
+Giữa Basket.API và Discount.Grpc giao tiếp với nhau bằng GPRC:
+
+Để sử dụng dữ liệu từ Discount service từ Basket cần làm những bước sau đây
+
+- Thêm Service Reference trên Basket.API
+- Add --> Connected service --> GRPC --> Next --> Select the type of class to be generated (client)
+- Tạo DiscountGrpcService để định nghĩa các phương thức phía Client (Basket.API)
+- Register Discount Grpc CLient và Discount Grpc Service vào trong Basket.API
+
+```C#
+services.AddStackExchangeRedisCache(options =>
+{
+    options.Configuration = config.GetValue<string>("CacheSettings:ConnectionString");
+});
+```
+
+Docker: Add --> Container Orchestrator Support --> Docker Compose --> Linux --> Ok
+
+**Discount.API**
 
 Npgsql
 Dapper
+Docker: Add --> Container Orchestrator Support --> Docker Compose --> Linux --> Ok
+
+**Discount.Grpc**
+
+AutoMapper.Extensions.Microsoft.DependencyInjection
+Npgsql
+Dapper
+Docker: Add --> Container Orchestrator Support --> Docker Compose --> Linux --> Ok
 
 **Ordering**
 
