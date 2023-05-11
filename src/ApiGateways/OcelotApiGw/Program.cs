@@ -19,7 +19,7 @@ builder.Host.ConfigureLogging((hostingContext, loggingbuilder) =>
 });
 
 var app = builder.Build();
-app.UseOcelot();
+await app.UseOcelot();
 app.Run();
 
 
